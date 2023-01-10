@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bendy-adhesive"
+version = "0.1.0"
+description = ""
+authors = ["ash <ash@sorrel.sh>"]
+readme = "README.md"
+packages = [{include = "bendy_adhesive", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+discord-py = "^2.1.0"
+
+[tool.poetry.scripts]
+bendy-adhesive = "bendy_adhesive:main"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
